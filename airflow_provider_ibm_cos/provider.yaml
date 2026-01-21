@@ -1,0 +1,5 @@
+package-name: apache-airflow-providers-ibm-cos
+name: IBM Cloud Object Storage
+connection-types:
+- connection-type: ibm_cos
+hook-class-name: airflow_provider_ibm_cos.hooks.cos.IBMCloudObjectStorageHook

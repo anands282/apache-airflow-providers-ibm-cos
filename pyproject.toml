@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=67", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apache-airflow-providers-ibm-cos"
+version = "0.1.0"
+description = "Apache Airflow provider for IBM Cloud Object Storage"
+requires-python = ">=3.9"
+
+dependencies = [
+  "apache-airflow>=2.7",
+  "ibm-cos-sdk>=2.13.0"
+]
+
+[project.optional-dependencies]
+tests = [
+  "pytest",
+  "pytest-mock"
+]
